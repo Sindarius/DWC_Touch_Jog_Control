@@ -296,6 +296,7 @@ export default class {
     this.svg = new d3.select(this.element)
       .append('svg')
       .attr('height',this.element.style.height)
+      .attr('width', '100%')
       .attr('class', 'jogger')
       .attr('viewBox', '0 0 80 60')
       .attr('preserveAspectRatio', 'xMidYMid meet');

@@ -1,0 +1,9 @@
+{
+  "id": "TouchJog",
+  "name": "Touch Jog",
+  "author": "Juan Rosario",
+  "version": "1.1.0",
+  "license": "LGPL-3.0-or-later",
+  "homepage": "https://github.com/Sindarius/DWC_Touch_Jog_Control",
+  "dwcVersion": "3.4"
+}

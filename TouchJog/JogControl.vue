@@ -1,5 +1,8 @@
 <template>
-   <div class="center-container"  ref="jogContainer"></div>
+   <div>
+	<cnc-axes-position :machine-position="machinePosition" @click="machinePosition = !machinePosition" />
+	<div class="center-container"  ref="jogContainer"></div>
+   </div>
 </template>
 
 <script>
@@ -7,6 +10,11 @@
 import jogControl from './JogControl.js';
 import { mapState, mapActions } from 'vuex';
 export default {
+	data() {
+		return {
+			machinePosition: false
+		}
+	},
 	computed: {
 		...mapState('settings', ['darkTheme']),
 	},
@@ -43,8 +51,12 @@ export default {
 </script>
 
 <style>
+
 .center-container{
    text-align:center;
+   height:80%;
+   width:100%;
+   
 }
 .noselect {
 	-webkit-touch-callout: none;
